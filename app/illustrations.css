@@ -1,0 +1,35 @@
+/* Original editorial SVG illustration layer. */
+.service-card {
+  position: relative;
+  min-height: 430px;
+  background-repeat: no-repeat;
+  background-position: 28px 82px;
+  background-size: calc(100% - 56px) 128px;
+}
+.service-card:nth-child(1) { background-image: url("/illustrations/primary-care.svg?v=2"); }
+.service-card:nth-child(2) { background-image: url("/illustrations/womens-health.svg?v=2"); }
+.service-card:nth-child(3) { background-image: url("/illustrations/wellness.svg?v=2"); }
+.service-card:nth-child(4) { background-image: url("/illustrations/virtual-care.svg?v=2"); }
+.service-card h3 { margin-top: 200px; }
+.service-icon { width: 40px; height: 40px; border: 1px solid rgba(11,93,85,.08); background: rgba(239,246,243,.88); backdrop-filter: blur(8px); }
+.approach-visual {
+  background-color: #0b6158;
+  background-image: url("/illustrations/listening-care.svg?v=2");
+  background-repeat: no-repeat;
+  background-position: center 5%;
+  background-size: 94% auto;
+}
+.approach-visual::before { opacity: .45; }
+.approach-visual .calm-orbit { display: none; }
+.quote-card { box-shadow: 0 18px 50px rgba(3,35,32,.18); }
+@media (hover:hover) and (pointer:fine) {
+  .service-card { transition: transform 220ms var(--ease-out), background-color 220ms ease, background-position 260ms var(--ease-out), box-shadow 220ms ease; }
+  .service-card:hover { background-position: 28px 76px; }
+}
+@media (max-width:1020px) { .service-card { background-size: min(220px, calc(100% - 60px)) 130px; } }
+@media (max-width:760px) {
+  .service-card { min-height: 365px; background-position: right 25px top 72px; background-size: 190px 120px; }
+  .service-card h3 { margin-top: 170px; }
+  .approach-visual { background-size: 112% auto; background-position: center 2%; }
+}
+@media (prefers-reduced-transparency:reduce) { .service-icon { backdrop-filter: none; background: #eff6f3; } }

@@ -1,0 +1,281 @@
+/* Editorial system: photography, typography, and grid do the work. */
+.dental-home {
+  --atelier-sage: #aeb9aa;
+  --atelier-sage-light: #dce3da;
+  --atelier-forest: #173a34;
+  --atelier-cream: #f4efe5;
+  --atelier-paper: #fbf8f2;
+  --font-geist-mono: var(--font-body);
+  font-family: var(--font-body), sans-serif;
+}
+
+.dental-home .site-header {
+  top: 20px;
+  border-color: rgba(23,58,52,.12);
+  border-radius: 12px;
+  background: rgba(249,247,240,.92);
+  box-shadow: 0 10px 28px rgba(31,59,52,.07);
+}
+.dental-home .brand { letter-spacing: -.045em; }
+.dental-home .brand-mark { width: 23px; height: 23px; }
+.dental-home .brand-mark span { border-radius: 2px; }
+.dental-home .button { border-radius: 9px; }
+.dental-home .button-dark,
+.dental-home .button-primary { background: var(--atelier-forest); }
+
+.dental-home .hero {
+  min-height: 980px;
+  align-items: flex-start;
+  background: var(--atelier-sage);
+}
+.dental-home .hero::before,
+.dental-home .hero::after { display: none; }
+.dental-home .hero-content {
+  padding-top: 142px;
+  text-align: center;
+}
+.dental-home .eyebrow {
+  margin: 0 auto 24px;
+  padding: 7px 0;
+  border: 0;
+  border-radius: 0;
+  color: rgba(23,58,52,.75);
+  background: transparent;
+  letter-spacing: .15em;
+}
+.dental-home .pulse-dot { border-radius: 1px; box-shadow: none; }
+.dental-home .hero h1 {
+  max-width: 980px;
+  margin-inline: auto;
+  color: #143630;
+  font-family: var(--font-display), serif;
+  font-size: clamp(76px, 8.2vw, 122px);
+  font-weight: 400;
+  line-height: .82;
+  letter-spacing: -.052em;
+}
+.dental-home .hero h1 em {
+  color: #f8f3e9;
+  font-family: inherit;
+  font-style: italic;
+  font-weight: 400;
+  letter-spacing: -.035em;
+}
+.dental-home .hero-copy {
+  max-width: 590px;
+  margin: 27px auto 0;
+  color: rgba(20,54,48,.77);
+  font-size: 14px;
+  line-height: 1.7;
+}
+.dental-home .hero-actions { justify-content: center; margin-top: 25px; }
+.dental-home .hero-proof { display: none; }
+
+.dental-home .hero-image {
+  inset: auto auto 52px 5%;
+  width: 70%;
+  height: 365px;
+  border-radius: 4px;
+  background: url("/images/atelier/clinic-interior.png") center / cover no-repeat;
+  box-shadow: 0 22px 55px rgba(32,57,51,.14);
+  overflow: visible;
+}
+.dental-home .hero-image img,
+.dental-home .hero-image-wash { display: none; }
+.dental-home .hero-image::before {
+  content: "";
+  position: absolute;
+  width: 31%;
+  height: 340px;
+  right: -31%;
+  top: -58px;
+  border: 7px solid var(--atelier-sage);
+  border-radius: 3px;
+  background: url("/images/atelier/patient-real.jpg") center 32% / cover no-repeat;
+  box-shadow: 0 20px 45px rgba(32,57,51,.14);
+}
+.dental-home .hero-image::after {
+  content: "A calmer dental experience";
+  position: absolute;
+  left: 0;
+  bottom: -31px;
+  color: rgba(23,58,52,.68);
+  font-size: 9px;
+  font-weight: 650;
+  letter-spacing: .16em;
+  text-transform: uppercase;
+}
+.dental-home .availability-card {
+  right: 4.5%;
+  bottom: 56px;
+  border-radius: 8px;
+  background: rgba(250,247,239,.94);
+  box-shadow: 0 14px 32px rgba(22,54,48,.12);
+}
+.dental-home .availability-icon,
+.dental-home .availability-card > a { border-radius: 5px; }
+
+.dental-home .trust-strip {
+  padding: 0;
+  border-top: 1px solid rgba(23,58,52,.13);
+  border-bottom: 1px solid rgba(23,58,52,.13);
+  background: var(--atelier-paper);
+}
+.dental-home .trust-grid > div { min-height: 86px; }
+.dental-home .trust-grid strong {
+  font-family: var(--font-display), serif;
+  font-size: 25px;
+  font-weight: 400;
+}
+
+.dental-home .services-section { padding-top: 132px; background: var(--atelier-paper); }
+.dental-home .split-heading { grid-template-columns: .92fr .55fr; gap: 120px; }
+.dental-home .section-heading h2,
+.dental-home .approach-content h2,
+.dental-home .faq-intro h2,
+.dental-home .booking-card h2,
+.dental-home .team-heading h2,
+.dental-home .footer-intro h2 {
+  font-family: var(--font-display), serif;
+  font-weight: 400;
+  letter-spacing: -.045em;
+}
+.dental-home .section-heading h2 { max-width: 680px; font-size: clamp(56px, 6.2vw, 82px); line-height: .94; }
+.dental-home .kicker { color: #527268; letter-spacing: .17em; }
+
+.dental-home .service-grid {
+  grid-template-columns: repeat(2, 1fr);
+  border-color: rgba(23,58,52,.16);
+}
+.dental-home .service-card {
+  min-height: 390px;
+  padding: 34px;
+  border-color: rgba(23,58,52,.16);
+  border-radius: 0;
+  background: transparent !important;
+  background-image: none !important;
+}
+.dental-home .service-card::before,
+.dental-home .service-card::after { display: none; }
+.dental-home .service-icon {
+  border: 1px solid rgba(23,58,52,.16);
+  border-radius: 4px;
+  color: var(--atelier-forest);
+  background: transparent;
+}
+.dental-home .service-number {
+  color: rgba(23,58,52,.55);
+  font-size: 9px;
+  letter-spacing: .12em;
+}
+.dental-home .service-card h3 {
+  margin: 128px 0 14px !important;
+  font-family: var(--font-display), serif;
+  font-size: 40px;
+  font-weight: 400;
+  letter-spacing: -.035em;
+}
+.dental-home .service-card p { max-width: 390px; font-size: 13px; }
+
+.dental-home .approach-section { background: #e3e8df; }
+.dental-home .approach-grid { grid-template-columns: 1.05fr .95fr; }
+.dental-home .approach-visual {
+  min-height: 590px;
+  border-radius: 4px;
+  background: linear-gradient(180deg, transparent 45%, rgba(5,38,36,.82)), url("/images/dental/implant-3d.png") center / cover no-repeat;
+  box-shadow: 0 24px 55px rgba(24,59,51,.13);
+}
+.dental-home .approach-visual::before,
+.dental-home .calm-orbit { display: none; }
+.dental-home .quote-card {
+  left: 25px;
+  right: 25px;
+  bottom: 25px;
+  border-radius: 3px;
+  background: rgba(8,47,43,.72);
+}
+.dental-home .check-list li span { border-radius: 3px; background: rgba(255,255,255,.55); }
+
+.dental-home .team-section { background: #f1ece3; }
+.dental-home .doctor-card {
+  border: 1px solid rgba(23,58,52,.13);
+  border-radius: 5px;
+  background: rgba(255,255,255,.45);
+  box-shadow: none;
+}
+.dental-home .doctor-info h3 { font-family: var(--font-display), serif; font-weight: 400; }
+.dental-home .doctor-portrait { background: #d9dfd6; }
+.dental-home .faq-section,
+.dental-home .booking-section { background: var(--atelier-paper); }
+.dental-home .faq-item button { font-weight: 560; }
+.dental-home .booking-card {
+  min-height: 350px;
+  border-radius: 6px;
+  background: var(--atelier-forest);
+}
+.dental-home .booking-card::before,
+.dental-home .booking-card::after { display: none; }
+.dental-home footer { background: #122f2b; }
+.dental-home .footer-portal { border-radius: 0; }
+
+@media (hover:hover) and (pointer:fine) {
+  .dental-home .service-card:hover { transform: none; background: #f1f3ec !important; box-shadow: none; }
+  .dental-home .doctor-card:hover { transform: translateY(-3px); }
+}
+
+@media (max-width: 1020px) {
+  .dental-home .desktop-nav,
+  .dental-home .phone-link { display: none; }
+  .dental-home .hero-image { width: 67%; }
+  .dental-home .hero-image::before { width: 38%; right: -38%; }
+  .dental-home .approach-grid { grid-template-columns: 1fr 1fr; gap: 50px; }
+}
+
+@media (max-width: 760px) {
+  .dental-home .site-header { top: 10px; border-radius: 8px; }
+  .dental-home .hero { min-height: 990px; padding-bottom: 0; align-items: flex-start; }
+  .dental-home .hero-content { padding-top: 108px; }
+  .dental-home .hero h1 { font-size: clamp(58px, 16vw, 72px); line-height: .84; }
+  .dental-home .hero-copy { max-width: 350px; margin-top: 23px; font-size: 13px; }
+  .dental-home .hero-actions { margin-top: 23px; }
+  .dental-home .hero-image {
+    left: 16px;
+    bottom: 74px;
+    width: calc(100% - 32px);
+    height: 294px;
+    border-radius: 3px;
+  }
+  .dental-home .hero-image::before {
+    width: 43%;
+    height: 220px;
+    right: 17px;
+    top: -132px;
+    border-width: 5px;
+  }
+  .dental-home .availability-card {
+    left: 25px;
+    right: auto;
+    bottom: 86px;
+    max-width: calc(100% - 50px);
+  }
+  .dental-home .trust-grid > div { min-height: 74px; }
+  .dental-home .services-section { padding-top: 96px; }
+  .dental-home .split-heading { grid-template-columns: 1fr; gap: 22px; }
+  .dental-home .section-heading h2 { font-size: 54px; }
+  .dental-home .service-grid { grid-template-columns: 1fr; }
+  .dental-home .service-card { min-height: 315px; padding: 27px; }
+  .dental-home .service-card h3 { margin-top: 72px !important; font-size: 36px; }
+  .dental-home .approach-grid { grid-template-columns: 1fr; gap: 48px; }
+  .dental-home .approach-visual { min-height: 460px; border-radius: 3px; }
+  .dental-home .booking-card { border-radius: 4px; }
+}
+
+@media (max-width: 430px) {
+  .dental-home .hero { min-height: 1010px; }
+  .dental-home .hero h1 { font-size: 58px; }
+}
+
+@media (prefers-reduced-transparency: reduce) {
+  .dental-home .site-header,
+  .dental-home .availability-card { background: var(--atelier-paper); backdrop-filter: none; }
+}

@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 140" role="img" aria-labelledby="t d">
+  <title id="t">Virtual care</title><desc id="d">Editorial line illustration of a private video consultation.</desc>
+  <path d="M20 111c38-26 75-30 110-9 32 19 64 15 95-8" fill="none" stroke="#DDE8EB" stroke-width="25" stroke-linecap="round"/>
+  <rect x="47" y="23" width="146" height="88" rx="10" fill="#FBFAF6" stroke="#0B5D55" stroke-width="2.2"/>
+  <path d="M37 124h166M86 111l-8 13M154 111l8 13" fill="none" stroke="#0B5D55" stroke-width="2.2" stroke-linecap="round"/>
+  <circle cx="103" cy="54" r="14" fill="none" stroke="#0B5D55" stroke-width="2.2"/>
+  <path d="M76 96c3-20 12-30 27-30s25 10 28 30" fill="none" stroke="#0B5D55" stroke-width="2.2" stroke-linecap="round"/>
+  <path d="M146 47h26M146 58h18M146 77h29M146 88h20" stroke="#7BAE9F" stroke-width="2.2" stroke-linecap="round"/>
+  <circle cx="182" cy="34" r="9" fill="#D7E8E3"/>
+  <path d="m178 34 3 3 5-6" fill="none" stroke="#0B5D55" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M95 47c4-8 15-9 20-1" stroke="#C78F70" stroke-width="2" stroke-linecap="round"/>
+</svg>

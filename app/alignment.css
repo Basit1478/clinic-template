@@ -1,0 +1,51 @@
+/* Precise image alignment and per-photo focal points. */
+.dental-home .hero-image::before {
+  top: 0;
+  right: -31%;
+  width: 31%;
+  height: 100%;
+  border: 0;
+  border-left: 8px solid var(--atelier-sage);
+  background-image: url("/images/atelier/patient-real-v2.jpg");
+  background-position: center 42%;
+  background-size: cover;
+}
+
+.dental-home .service-grid {
+  align-items: stretch;
+  grid-auto-rows: 1fr;
+}
+.dental-home .service-card {
+  min-height: 500px;
+  padding-top: 248px;
+  background-size: 100% 210px !important;
+  background-origin: border-box;
+  background-clip: border-box;
+}
+.dental-home .service-card:nth-child(1) { background-position: center 46% !important; }
+.dental-home .service-card:nth-child(2) { background-position: center 38% !important; }
+.dental-home .service-card:nth-child(3) { background-position: center 54% !important; }
+.dental-home .service-card:nth-child(4) { background-position: center 42% !important; }
+.dental-home .service-card h3 { margin-top: 46px !important; }
+.dental-home .service-card p { min-height: 44px; }
+
+.dental-home .doctor-featured .doctor-portrait img { object-position: center 22%; }
+.dental-home .doctor-compact .doctor-portrait img { object-position: center 18%; }
+
+@media (max-width: 760px) {
+  .dental-home .hero-image::before {
+    top: 0;
+    right: 0;
+    width: 39%;
+    height: 100%;
+    border: 0;
+    border-left: 5px solid var(--atelier-sage);
+    background-position: center 44%;
+  }
+  .dental-home .service-card {
+    min-height: 480px;
+    padding-top: 242px;
+    background-size: 100% 210px !important;
+  }
+  .dental-home .service-card h3 { margin-top: 44px !important; }
+}

@@ -1,0 +1,73 @@
+/* Final editorial refinement layer: intentionally overrides the base theme. */
+.team-heading { display: grid; grid-template-columns: 1.15fr .6fr; align-items: end; gap: 5rem; text-align: left; }
+.team-heading p { max-width: 28rem; margin: 0 0 .35rem; color: var(--ink-soft); font-size: 1rem; line-height: 1.7; }
+.team-grid { grid-template-columns: 1.22fr .78fr; grid-template-rows: repeat(2, minmax(0, 1fr)); gap: 1.25rem; align-items: stretch; }
+.doctor-card { padding: 0; display: grid; overflow: hidden; border-radius: 1.5rem; background: #fffdf9; }
+.doctor-featured { grid-row: 1 / 3; grid-template-rows: minmax(35rem, 1fr) auto; }
+.doctor-compact { grid-template-columns: 44% 56%; }
+.doctor-portrait, .doctor-featured .doctor-portrait { position: relative; height: auto; min-height: 20rem; border-radius: 0; }
+.doctor-portrait img { object-fit: cover; transition: transform .55s var(--ease-out); }
+.doctor-featured .doctor-portrait img { object-position: center 28%; }
+.doctor-compact .doctor-portrait img { object-position: center 22%; }
+.doctor-info { padding: 1.65rem 1.75rem 1.8rem; display: flex; flex-direction: column; align-items: flex-start; }
+.doctor-featured .doctor-info { padding: 2rem 2.25rem 2.2rem; }
+.doctor-meta { width: 100%; display: flex; align-items: center; justify-content: space-between; gap: 1rem; }
+.doctor-meta > span { color: var(--teal-bright); font-size: .69rem; font-weight: 730; letter-spacing: .11em; text-transform: uppercase; }
+.doctor-meta small { color: #6c817d; font-size: .68rem; font-weight: 570; }
+.doctor-meta small:first-letter { text-transform: uppercase; }
+.doctor-info h3 { margin: .65rem 0 .65rem; font-size: clamp(1.35rem, 2.1vw, 2rem); }
+.doctor-compact .doctor-info h3 { font-size: 1.35rem; }
+.doctor-info p { min-height: 0; margin: 0; font-size: .875rem; line-height: 1.6; }
+.doctor-info a { margin-top: auto; padding-top: 1.35rem; font-size: .78rem; }
+
+footer { padding: 6.5rem 0 2rem; }
+.footer-intro { padding-bottom: 5rem; display: flex; align-items: flex-end; justify-content: space-between; gap: 3rem; border-bottom: 1px solid rgba(255,255,255,.12); }
+.footer-intro h2 { margin: 2.4rem 0 0; color: #f7f3eb; font-size: clamp(3.5rem, 6.7vw, 6.5rem); line-height: .88; letter-spacing: -.07em; font-weight: 540; }
+.footer-intro h2 em { color: #98c9bb; font-family: Georgia, serif; font-weight: 400; }
+.footer-portal { min-height: 3.5rem; padding: 0 1.3rem; display: inline-flex; align-items: center; gap: .75rem; border-bottom: 1px solid #8bbdaf; color: white; font-size: .9rem; font-weight: 640; transition: gap 180ms var(--ease-out), color 180ms ease; }
+.footer-grid { padding: 4.6rem 0; grid-template-columns: 1.5fr .7fr 1fr 1fr; gap: 4.5rem; }
+.footer-label { margin-bottom: 1.25rem; font-size: .7rem; letter-spacing: .16em; }
+.footer-grid p, .footer-brand p { margin: 0; color: rgba(255,255,255,.76); font-size: .9rem; line-height: 1.9; }
+.footer-brand p { max-width: 20rem; }
+.footer-muted { display: inline-block; margin-top: .7rem; color: rgba(255,255,255,.48); }
+.footer-underlined { display: inline-block; margin-top: .7rem; border-bottom: 1px solid rgba(255,255,255,.35); }
+.footer-bottom { margin-top: 0; padding-top: 1.6rem; font-size: .75rem; }
+.footer-bottom div { display: flex; gap: 1.5rem; }
+
+@media (hover:hover) and (pointer:fine) {
+  .doctor-card:hover .doctor-portrait img { transform: scale(1.025); }
+  .footer-portal:hover { gap: 1rem; color: #a8d4c8; }
+}
+
+@media (max-width: 900px) {
+  .team-heading { grid-template-columns: 1fr; gap: 1.5rem; }
+  .team-grid { grid-template-columns: 1fr 1fr; grid-template-rows: auto auto; }
+  .doctor-featured { grid-column: 1 / 3; grid-row: auto; grid-template-columns: 1.1fr .9fr; grid-template-rows: none; }
+  .doctor-compact { grid-template-columns: 1fr; grid-template-rows: 20rem auto; }
+  .doctor-featured .doctor-portrait { min-height: 30rem; }
+  .footer-grid { grid-template-columns: 1.3fr 1fr 1fr; }
+  .footer-brand { grid-column: 1 / -1; }
+}
+
+@media (max-width: 760px) {
+  .team-heading h2 { font-size: 2.9rem; }
+  .team-grid { grid-template-columns: 1fr; }
+  .doctor-featured, .doctor-compact { grid-column: auto; grid-template-columns: 1fr; grid-template-rows: 25rem auto; }
+  .doctor-featured .doctor-portrait, .doctor-compact .doctor-portrait { min-height: 0; height: auto; }
+  .doctor-info, .doctor-featured .doctor-info { padding: 1.5rem; }
+  .doctor-info h3, .doctor-compact .doctor-info h3 { font-size: 1.55rem; }
+  footer { padding-top: 4.8rem; }
+  .footer-intro { padding-bottom: 3.5rem; align-items: flex-start; flex-direction: column; }
+  .footer-intro h2 { margin-top: 2rem; font-size: 3.7rem; }
+  .footer-grid { padding: 3.5rem 0; grid-template-columns: 1fr 1fr; gap: 2.8rem 1.5rem; }
+  .footer-brand { grid-column: 1 / -1; margin-bottom: 0; }
+  .footer-grid p, .footer-brand p { font-size: .92rem; line-height: 1.8; }
+  .footer-label { font-size: .68rem; }
+  .footer-bottom { font-size: .73rem; }
+}
+
+@media (max-width: 430px) {
+  .footer-grid { grid-template-columns: 1fr; }
+  .footer-brand { grid-column: auto; }
+  .footer-bottom div { gap: .85rem; flex-wrap: wrap; }
+}

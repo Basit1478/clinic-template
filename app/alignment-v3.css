@@ -1,0 +1,8 @@
+/* Disable the legacy card background; photography now lives only in the fixed frame. */
+.dental-home .service-card:nth-child(1),
+.dental-home .service-card:nth-child(2),
+.dental-home .service-card:nth-child(3),
+.dental-home .service-card:nth-child(4) {
+  background-image: none !important;
+  background-position: initial !important;
+}

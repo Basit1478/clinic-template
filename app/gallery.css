@@ -1,0 +1,56 @@
+/* Real editorial photography across treatment cards. */
+.dental-home .service-card {
+  padding-top: 228px;
+  background-position: top center !important;
+  background-size: 100% 190px !important;
+  background-repeat: no-repeat !important;
+}
+.dental-home .service-card:nth-child(1) { background-image: url("/images/atelier/care-treatment.jpg") !important; }
+.dental-home .service-card:nth-child(2) { background-image: url("/images/atelier/care-patient.jpg") !important; }
+.dental-home .service-card:nth-child(3) { background-image: url("/images/atelier/care-clinic.jpg") !important; }
+.dental-home .service-card:nth-child(4) { background-image: url("/images/atelier/care-tools.jpg") !important; }
+.dental-home .service-card h3 { margin-top: 56px !important; }
+
+/* Images unfold on scroll; unsupported browsers retain the static layout. */
+@supports (animation-timeline: view()) {
+  .dental-home .service-card,
+  .dental-home .approach-visual,
+  .dental-home .doctor-portrait {
+    animation: editorial-image-reveal linear both;
+    animation-timeline: view();
+    animation-range: entry 4% cover 34%;
+  }
+
+  @keyframes editorial-image-reveal {
+    from {
+      clip-path: inset(0 0 22% 0);
+      opacity: .55;
+      transform: translateY(22px);
+    }
+    to {
+      clip-path: inset(0 0 0 0);
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+}
+
+@media (max-width: 760px) {
+  .dental-home .service-card {
+    min-height: 470px;
+    padding-top: 242px;
+    background-size: 100% 210px !important;
+  }
+  .dental-home .service-card h3 { margin-top: 48px !important; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .dental-home .service-card,
+  .dental-home .approach-visual,
+  .dental-home .doctor-portrait {
+    animation: none !important;
+    clip-path: none;
+    opacity: 1;
+    transform: none;
+  }
+}

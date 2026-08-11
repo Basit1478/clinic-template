@@ -1,0 +1,28 @@
+/* Keyboard focus remains obvious without adding rings to pointer clicks. */
+.drawer-close:focus-visible,
+.drawer-options > button:focus-visible,
+.drawer-primary:focus-visible,
+.drawer-secondary:focus-visible,
+.drawer-back:focus-visible,
+.mobile-booking-bar:focus-visible {
+  outline: 3px solid rgba(47,112,98,.34);
+  outline-offset: 3px;
+}
+
+.mobile-booking-bar {
+  transition: transform 140ms cubic-bezier(.23,1,.32,1), background-color 170ms ease;
+}
+.mobile-booking-bar:active { transform: scale(.985); }
+
+/* Neutralize sticky hover states on touch hardware. */
+@media (hover:none), (pointer:coarse) {
+  .drawer-close:hover,
+  .drawer-back:hover { background: transparent; }
+  .drawer-options > button:hover { border-color: rgba(23,58,52,.13); }
+  .drawer-options > button.selected:hover { border-color: #357568; }
+  .drawer-primary:hover { background: #173a34; }
+}
+
+@media (prefers-reduced-motion:reduce) {
+  .mobile-booking-bar { transition: none; }
+}

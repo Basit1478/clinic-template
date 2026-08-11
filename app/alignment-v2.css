@@ -1,0 +1,45 @@
+/* Fixed media frames: crops move inside the frame, never the frame itself. */
+.dental-home .service-card {
+  position: relative;
+  overflow: hidden;
+  background-image: none !important;
+}
+.dental-home .service-card::before {
+  content: "";
+  position: absolute;
+  z-index: 0;
+  top: 0;
+  right: 0;
+  left: 0;
+  display: block !important;
+  height: 210px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.dental-home .service-card:nth-child(1)::before {
+  background-image: url("/images/atelier/care-treatment.jpg");
+  background-position: center 48%;
+}
+.dental-home .service-card:nth-child(2)::before {
+  background-image: url("/images/atelier/care-patient.jpg");
+  background-position: center 34%;
+}
+.dental-home .service-card:nth-child(3)::before {
+  background-image: url("/images/atelier/care-clinic.jpg");
+  background-position: center 56%;
+}
+.dental-home .service-card:nth-child(4)::before {
+  background-image: url("/images/atelier/care-tools.jpg");
+  background-position: center 40%;
+}
+.dental-home .service-card-top,
+.dental-home .service-card h3,
+.dental-home .service-card p,
+.dental-home .service-card a {
+  position: relative;
+  z-index: 1;
+}
+
+@media (max-width: 760px) {
+  .dental-home .service-card::before { height: 210px; }
+}

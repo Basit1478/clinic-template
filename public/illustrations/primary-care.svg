@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 140" role="img" aria-labelledby="t d">
+  <title id="t">Primary care</title><desc id="d">Editorial line illustration of continuous care and a heartbeat.</desc>
+  <path d="M18 113c38-28 73-32 107-11 32 19 65 16 99-9" fill="none" stroke="#D9E8E3" stroke-width="24" stroke-linecap="round"/>
+  <circle cx="190" cy="33" r="19" fill="#DDEBE6"/>
+  <path d="M67 35v28c0 22 14 36 34 36s34-14 34-36V35" fill="none" stroke="#0B5D55" stroke-width="2.4" stroke-linecap="round"/>
+  <path d="M58 29c0-7 5-12 12-12M144 29c0-7-5-12-12-12" fill="none" stroke="#0B5D55" stroke-width="2.4" stroke-linecap="round"/>
+  <circle cx="58" cy="32" r="4" fill="#C78F70"/><circle cx="144" cy="32" r="4" fill="#C78F70"/>
+  <path d="M101 99v15c0 10 8 17 18 17s18-7 18-17v-6" fill="none" stroke="#0B5D55" stroke-width="2.4" stroke-linecap="round"/>
+  <circle cx="139" cy="104" r="7" fill="none" stroke="#0B5D55" stroke-width="2.4"/>
+  <path d="M163 72h12l6-11 9 23 7-14h16" fill="none" stroke="#C78F70" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

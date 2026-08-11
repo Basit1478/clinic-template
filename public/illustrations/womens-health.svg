@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 140" role="img" aria-labelledby="t d">
+  <title id="t">Women’s health</title><desc id="d">Editorial continuous-line profile with a botanical form.</desc>
+  <path d="M25 112c29-24 58-29 87-15 34 17 68 14 103-8" fill="none" stroke="#EADFD3" stroke-width="25" stroke-linecap="round"/>
+  <circle cx="190" cy="33" r="18" fill="#E8D5C3"/>
+  <path d="M115 19c-28 3-47 24-46 51 1 27 19 46 48 50 19 3 35-4 45-18-17 2-30-6-35-21 14-5 22-17 22-35 0-12-3-21-10-28" fill="none" stroke="#0B5D55" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M115 20c17 6 28 18 32 37-12-8-25-11-40-7" fill="none" stroke="#0B5D55" stroke-width="2.4" stroke-linecap="round"/>
+  <path d="M107 82c7 7 15 8 24 3" fill="none" stroke="#C78F70" stroke-width="2" stroke-linecap="round"/>
+  <path d="M181 71v48M181 93c-17-2-26-11-28-27 17 1 26 10 28 27ZM181 103c16-2 25-10 28-25-16 0-25 8-28 25Z" fill="none" stroke="#6DA792" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

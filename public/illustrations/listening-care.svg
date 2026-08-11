@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 430" role="img" aria-labelledby="t d">
+  <title id="t">Listening-centered care</title><desc id="d">Elegant line portraits facing each other with a heart between them.</desc>
+  <path d="M40 344c104-58 199-67 284-28 77 35 153 27 229-24" fill="none" stroke="#0A574F" stroke-width="78" stroke-linecap="round"/>
+  <circle cx="501" cy="72" r="48" fill="#2D7C70" fill-opacity=".65"/>
+  <path d="M482 80c11-18 29-25 51-20M476 94c16-16 36-20 57-10" fill="none" stroke="#86C0B0" stroke-width="3" stroke-linecap="round"/>
+  <path d="M202 82c-52 9-84 49-82 101 2 54 37 93 91 102 34 5 65-7 84-35-31 5-57-12-68-42 24-9 38-29 38-60 0-27-9-49-27-65" fill="none" stroke="#E8F2EF" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M202 84c36 10 58 35 65 75-25-16-53-20-84-12" fill="none" stroke="#A6D0C4" stroke-width="4" stroke-linecap="round"/>
+  <path d="M191 209c14 13 31 15 49 5" fill="none" stroke="#E6B18C" stroke-width="3" stroke-linecap="round"/>
+  <path d="M402 86c50 11 81 50 79 101-2 52-35 90-88 99-33 6-63-6-82-34 30 4 55-12 66-41-24-9-38-29-38-58 0-26 9-48 26-64" fill="none" stroke="#B6DACE" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M403 88c-34 10-56 34-63 72 25-15 51-19 81-11" fill="none" stroke="#79B3A3" stroke-width="4" stroke-linecap="round"/>
+  <path d="M362 211c14 12 30 14 48 4" fill="none" stroke="#CD9272" stroke-width="3" stroke-linecap="round"/>
+  <path d="M301 133c-13-24-44-4-28 16 14 17 28 24 28 24s14-7 28-24c16-20-15-40-28-16Z" fill="none" stroke="#D8EEE8" stroke-width="4" stroke-linejoin="round"/>
+  <path d="M300 173v50" stroke="#D8EEE8" stroke-width="3" stroke-linecap="round" stroke-dasharray="2 10"/>
+  <path d="M248 281c33 17 69 17 106 0" fill="none" stroke="#E7B28E" stroke-width="7" stroke-linecap="round"/>
+  <path d="M476 328c1-39 19-67 52-83-1 39-19 66-52 83ZM476 328c-10-31-29-50-57-58 6 31 25 50 57 58Z" fill="none" stroke="#78B5A5" stroke-width="3" stroke-linejoin="round"/>
+  <path d="M476 329v-83" stroke="#9ACABB" stroke-width="3" stroke-linecap="round"/>
+</svg>

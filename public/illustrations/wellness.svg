@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 140" role="img" aria-labelledby="t d">
+  <title id="t">Wellness planning</title><desc id="d">Editorial line illustration of a horizon, sun, and growing leaf.</desc>
+  <path d="M18 112c37-22 72-26 106-10 32 15 65 11 99-12" fill="none" stroke="#DDE9DC" stroke-width="25" stroke-linecap="round"/>
+  <path d="M53 99h134" stroke="#0B5D55" stroke-width="2.2" stroke-linecap="round"/>
+  <path d="M81 99a39 39 0 0 1 78 0" fill="none" stroke="#0B5D55" stroke-width="2.2"/>
+  <path d="M120 32v13M79 50l10 10M161 50l-10 10M61 82h14M165 82h14" stroke="#C2924E" stroke-width="2.2" stroke-linecap="round"/>
+  <circle cx="120" cy="82" r="17" fill="#E9C776" fill-opacity=".72"/>
+  <path d="M186 116c0-29 12-48 36-57-1 27-13 46-36 57ZM186 116c-7-22-19-36-37-40 3 22 15 35 37 40Z" fill="none" stroke="#0B5D55" stroke-width="2.2" stroke-linejoin="round"/>
+  <path d="M186 116c8-20 20-39 36-57M186 116c-10-18-22-31-37-40" stroke="#6DA792" stroke-width="1.6" stroke-linecap="round"/>
+</svg>
